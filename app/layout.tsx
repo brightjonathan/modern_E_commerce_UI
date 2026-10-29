@@ -1,6 +1,8 @@
 import { ShopProvider } from "@/context/ShopContext";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -28,9 +30,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body  className="min-h-screen">
         <ShopProvider>
+          <Header/>
           
         <main className="min-h-[60vh]">{children} </main>
 
+
+        <Footer/>
         </ShopProvider>
         </body>
     </html>
