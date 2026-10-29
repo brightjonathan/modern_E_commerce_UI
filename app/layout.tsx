@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: "This is an e-commerce UI website built with Next.js 13 and Tailwind CSS.",
 };
 
-
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -24,7 +23,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${jakarta.variable}`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body  className="min-h-screen">
+        
+        <main className="min-h-[60vh]">{children} </main>
+        
+        </body>
     </html>
   );
 }
