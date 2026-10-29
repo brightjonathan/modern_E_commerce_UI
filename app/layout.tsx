@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { ShopProvider } from "@/context/ShopContext";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -27,9 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${jakarta.variable}`}
     >
       <body  className="min-h-screen">
-        
+        <ShopProvider>
+          
         <main className="min-h-[60vh]">{children} </main>
-        
+
+        </ShopProvider>
         </body>
     </html>
   );
