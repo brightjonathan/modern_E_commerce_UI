@@ -6,9 +6,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
 
-export const metadata: Metadata = {
-  title: "E-commerce UI website",
-  description: "This is an e-commerce UI website built with Next.js 13 and Tailwind CSS.",
+export const metadata = {
+  title: {
+    default: "Modern E-commerce",
+    template: "%s | BrighShop",
+  },
+  description: "Discover curated electronics, fashion, home and more with fast delivery and easy returns.",
 };
 
 export const viewport = {
