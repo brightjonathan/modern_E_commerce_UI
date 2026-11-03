@@ -16,4 +16,4 @@ export default function useWishlist() {
       notify(had ? "Removed from wishlist" : "Saved to wishlist");
     },
   };
-}
+};

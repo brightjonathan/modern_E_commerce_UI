@@ -1,10 +1,10 @@
-import React from 'react';
+import HeroBanner from '@/components/Home/HeroBanner';
 
 
 const page = () => {
   return (
     <div>
-     <h1>HOME PAGE </h1>
+     <HeroBanner/>
     </div>
   )
 }
